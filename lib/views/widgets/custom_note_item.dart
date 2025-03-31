@@ -21,7 +21,7 @@ class NoteItem extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 26),
             ),
             subtitle: Padding(
-              padding: const EdgeInsets.only(top: 18.0, bottom: 24),
+              padding: const EdgeInsets.only(top: 18.0, bottom: 40),
               child: Text(
                 'build your career with flutter Android & Ios App.',
                 style: TextStyle(color: Colors.black45, fontSize: 18),
