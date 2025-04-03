@@ -12,8 +12,9 @@ void main() async{
 
 
   Bloc.observer =SimpleBlocObserver();
-  await Hive.openBox<NoteModel>(kNotesBox);
   Hive.registerAdapter(NoteModelAdapter());
+  await Hive.openBox<NoteModel>(kNotesBox);
+  
   runApp(const NotesApp());
 }
 
@@ -26,7 +27,7 @@ class NotesApp extends StatelessWidget {
       providers: [
       BlocProvider(
         create: (context) => AddNoteCubit(),
-        child: Container(),
+        
       )],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
