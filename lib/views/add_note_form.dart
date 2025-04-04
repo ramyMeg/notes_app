@@ -52,7 +52,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     formKey.currentState!.save();
                     var currentDate = DateTime.now();
 
-                    var formattedCurrentDate = DateFormat('EEE, M-d-y').format(currentDate);
+                    var formattedCurrentDate = DateFormat('EEE, d-M-y').format(currentDate);
 
                     // ignore: deprecated_member_use
                     var noteModel = NoteModel(
